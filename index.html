@@ -18,11 +18,20 @@
         }
         .svg-container {
             width: 100%;
+            position: relative;
             text-align: center;
+        }
+        .svg-item {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
         }
         svg {
             max-width: 100%;
             height: auto;
+            display: block;
         }
         img {
             max-width: 100%;
@@ -41,36 +50,44 @@
         section {
             box-sizing: border-box;
         }
+        
+        /* 信息部分样式 */
+        .info-section {
+            position: relative;
+            z-index: 10;
+            background-color: #fff;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- 提取关键SVG部分 -->
-        <div class="svg-container">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 10000" style="width: 100%;">
+        <!-- 提取关键SVG部分，使用定位实现叠加效果 -->
+        <div class="svg-container" style="height: 10000px;">
+            <!-- 按照原始顺序排列图片，后面的图片会叠加在前面的图片上 -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 10000" style="width: 100%; position: absolute; top: 0; left: 0; z-index: 1;">
                 <image href="https://mmbiz.qpic.cn/sz_mmbiz_png/aTnTTELWibpNnE5n7EakaEqZmkuN4dKu2gP65H5tiaaBGicIzPvQhqEZlg4ichZ6hlpB7mpnF15dR7Coxmhuf2hEzA/640?wx_fmt=png" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
             </svg>
             
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 10000" style="width: 100%;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 10000" style="width: 100%; position: absolute; top: 0; left: 0; z-index: 2;">
                 <image href="https://mmbiz.qpic.cn/sz_mmbiz_png/aTnTTELWibpNnE5n7EakaEqZmkuN4dKu2AxGBURqS0Ny3FUR5JQILqCs3icGCB9EErDqnMdFbpkLEIia315ObDyJQ/640?wx_fmt=png" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
             </svg>
             
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 10000" style="width: 100%;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 10000" style="width: 100%; position: absolute; top: 0; left: 0; z-index: 3;">
                 <image href="https://mmbiz.qpic.cn/sz_mmbiz_jpg/aTnTTELWibpNnE5n7EakaEqZmkuN4dKu28mDkg72n7IAy2ibmlrNP3sJseNu5hSo42MpBHn88gts0eTibUeD17Ftw/640?wx_fmt=jpeg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
             </svg>
             
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 10000" style="width: 100%;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 10000" style="width: 100%; position: absolute; top: 0; left: 0; z-index: 4;">
                 <a href="https://mp.weixin.qq.com/s?__biz=MzIzMzAwNjQ1Nw==&amp;mid=2247495605&amp;idx=1&amp;sn=4968837ba96c67924d3b9a38c0e174f7&amp;scene=21#wechat_redirect" target="_blank">
                     <image href="https://mmbiz.qpic.cn/sz_mmbiz_png/aTnTTELWibpNnE5n7EakaEqZmkuN4dKu2tZ1Ww4W95Z0O1Fzw8f4icickNyxOByKNhfEGcADiaQibFicksnIDtMj5mdQ/640?wx_fmt=png" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
                     <rect x="0" y="0" width="1080" height="10000" opacity="0" fill="transparent" />
                 </a>
             </svg>
             
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 10000" style="width: 100%;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 10000" style="width: 100%; position: absolute; top: 0; left: 0; z-index: 5;">
                 <image href="https://mmbiz.qpic.cn/sz_mmbiz_png/aTnTTELWibpNnE5n7EakaEqZmkuN4dKu2iaYUysznfiaFOcl0kpf9QAAUlDic2NJia1b8OOVRGSkCVic6s47mQ0JQfSg/640?wx_fmt=png" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
             </svg>
             
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 10000" style="width: 100%;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 10000" style="width: 100%; position: absolute; top: 0; left: 0; z-index: 6;">
                 <image href="https://mmbiz.qpic.cn/sz_mmbiz_png/aTnTTELWibpNnE5n7EakaEqZmkuN4dKu24BYMH96JvHhMp0VibZGx3LnMCg1FwJFdWOEp56WuakVKB5LsiaCGb01w/640?wx_fmt=png" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
             </svg>
         </div>
