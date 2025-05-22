@@ -46,27 +46,220 @@
             position: relative;
             margin: 0;
             padding: 0;
+            visibility: visible;
         }
         
         svg {
             width: 100%;
             height: auto;
+            display: inline-block;
+            outline: none;
+            vertical-align: top;
+        }
+        
+        .js_underline_content {
+            width: 100%;
+        }
+        
+        .scroll-section {
+            font-size: 0px;
+            line-height: 0;
+            margin: 0px;
+            overflow: hidden;
+            padding: 0px;
+            transform: scale(1);
+            visibility: visible;
+        }
+        
+        .svg-container {
+            text-align: center;
+            overflow: hidden;
+            transform: scale(1);
+            font-size: 0px !important;
+            line-height: 0 !important;
+            margin: 0px !important;
+            padding: 0px !important;
+            visibility: visible;
+        }
+        
+        .svg-bg {
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 比例 */
+            position: relative;
+        }
+        
+        .layer-section {
+            font-size: 0px;
+            text-align: justify;
+            width: 100%;
+            visibility: visible;
+        }
+        
+        .layer-inner {
+            display: inline-block;
+            overflow-x: hidden;
+            user-select: none;
+            vertical-align: top;
+            width: 100%;
+            visibility: visible;
+        }
+        
+        .layer-item {
+            font-size: 0px;
+            line-height: 0;
+            margin-top: -1px;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 100%;
+            max-width: 100% !important;
+            visibility: visible;
+        }
+        
+        .layer-center {
+            text-align: center;
+            font-size: 0px !important;
+            line-height: 0 !important;
+            margin: 0px !important;
+            padding: 0px !important;
+            visibility: visible;
+        }
+        
+        /* 添加动画效果 */
+        @keyframes slideUp {
+            from {
+                transform: translateY(100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+        
+        .animated-layer {
+            animation: slideUp 1s ease-out;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="rich_media_content">
-            <!-- 图片展示区域 -->
-            <div class="image-container">
-                <img src="https://img01.yzcdn.cn/upload_files/2025/05/22/Fmws9QTA5ALIqS8siWMse6Rq0010.png" alt="封面图片">
-                <img src="https://img01.yzcdn.cn/upload_files/2025/05/22/lkLTzj3jQGLi2s44L_EEYMo-NKyi.png" alt="内容图片1">
-                <img src="https://img01.yzcdn.cn/upload_files/2025/05/22/FvZBhNBlvB8ueno5BQArSqqo6NKA.jpg" alt="内容图片2">
-                <img src="https://img01.yzcdn.cn/upload_files/2025/05/22/lrX7lKV9RldRA0rzi1L8dY_zkKI6.png" alt="内容图片3">
-                <img src="https://img01.yzcdn.cn/upload_files/2025/05/22/lu8P6IgMtHPEZgO4wS-oqFZrNw3t.png" alt="内容图片4">
-                <img src="https://img01.yzcdn.cn/upload_files/2025/05/22/luBEPXzwb-l9tan7KzH7rr1vqZKm.png" alt="内容图片5">
-            </div>
+            <section>
+                <section class="js_underline_content">
+                    <section style="height: 0px; opacity: 0; margin: 0px; visibility: visible;" data-mpa-powered-by="yiban.io">
+                        <span>·</span>
+                    </section>
+                    <section style="height: 0px; opacity: 0; margin: 0px; visibility: visible;">
+                        <span>·</span>
+                    </section>
+                    
+                    <!-- 主要内容区域 -->
+                    <section style="background-position: center top; background-repeat: repeat; background-size: 100%; margin: 0px !important; padding: 0px !important; visibility: visible;" data-copyright="135编辑器">
+                        <section style="visibility: visible;">
+                            <!-- 第一个图文区域 -->
+                            <section data-copyright="135编辑器" data-id="68" data-name="135图文" style="margin: 0px; padding: 0px; transform: rotateZ(0deg) scale(1); visibility: visible;">
+                                <section data-role="outer" style="visibility: visible;">
+                                    <section data-role="paragraph" style="visibility: visible;">
+                                        <section style="visibility: visible;">
+                                            <!-- 这里可以添加内容 -->
+                                        </section>
+                                    </section>
+                                </section>
+                            </section>
+                            
+                            <!-- 三层上滑效果区域 -->
+                            <section data-copyright="135编辑器" data-id="718" data-name="三层上滑-顶图可跳转" style="margin: 0px; padding: 0px; transform: rotateZ(0deg) scale(1); visibility: visible;">
+                                <section data-inner-id="718" data-inner-name="135editor-scroll2layerstopwithlink" style="visibility: visible;">
+                                    <!-- 滑动效果容器 -->
+                                    <section class="scroll-section">
+                                        <!-- 第一层 -->
+                                        <section style="height: 0px; visibility: visible;">
+                                            <section class="svg-container">
+                                                <div class="svg-bg animated-layer" style="background-image: url('https://img01.yzcdn.cn/upload_files/2025/05/22/Fmws9QTA5ALIqS8siWMse6Rq0010.png');">
+                                                </div>
+                                            </section>
+                                        </section>
+                                        
+                                        <!-- 多层效果容器 -->
+                                        <section class="layer-section">
+                                            <section class="layer-inner">
+                                                <!-- 第二层 -->
+                                                <section style="height: 0px; visibility: visible;">
+                                                    <section style="height: 0px; visibility: visible;">
+                                                        <!-- 第二层第一张图 -->
+                                                        <section class="layer-item">
+                                                            <section class="layer-center">
+                                                                <div class="svg-bg animated-layer" style="background-image: url('https://img01.yzcdn.cn/upload_files/2025/05/22/lkLTzj3jQGLi2s44L_EEYMo-NKyi.png'); animation-delay: 0.2s;">
+                                                                </div>
+                                                            </section>
+                                                        </section>
+                                                        
+                                                        <!-- 第二层第二张图 -->
+                                                        <section class="layer-item">
+                                                            <section class="layer-center">
+                                                                <div class="svg-bg animated-layer" style="background-image: url('https://img01.yzcdn.cn/upload_files/2025/05/22/FvZBhNBlvB8ueno5BQArSqqo6NKA.jpg'); animation-delay: 0.4s;">
+                                                                </div>
+                                                            </section>
+                                                        </section>
+                                                        
+                                                        <!-- 第二层第三张图 -->
+                                                        <section class="layer-item">
+                                                            <section class="layer-center">
+                                                                <div class="svg-bg animated-layer" style="background-image: url('https://img01.yzcdn.cn/upload_files/2025/05/22/lrX7lKV9RldRA0rzi1L8dY_zkKI6.png'); animation-delay: 0.6s;">
+                                                                </div>
+                                                            </section>
+                                                        </section>
+                                                    </section>
+                                                    
+                                                    <!-- 第三层第一张图 -->
+                                                    <section class="layer-item">
+                                                        <div class="svg-bg animated-layer" style="background-image: url('https://img01.yzcdn.cn/upload_files/2025/05/22/lu8P6IgMtHPEZgO4wS-oqFZrNw3t.png'); animation-delay: 0.8s;">
+                                                        </div>
+                                                    </section>
+                                                    
+                                                    <!-- 第三层第二张图 -->
+                                                    <section class="layer-item">
+                                                        <section class="layer-center">
+                                                            <div class="svg-bg animated-layer" style="background-image: url('https://img01.yzcdn.cn/upload_files/2025/05/22/luBEPXzwb-l9tan7KzH7rr1vqZKm.png'); animation-delay: 1s;">
+                                                            </div>
+                                                        </section>
+                                                    </section>
+                                                    
+                                                    <!-- 第三层第三张图 -->
+                                                    <section class="layer-item">
+                                                        <section class="layer-center">
+                                                            <div class="svg-bg animated-layer" style="background-image: url('https://img01.yzcdn.cn/upload_files/2025/05/22/lrX7lKV9RldRA0rzi1L8dY_zkKI6.png'); animation-delay: 1.2s;">
+                                                            </div>
+                                                        </section>
+                                                    </section>
+                                                </section>
+                                            </section>
+                                        </section>
+                                    </section>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
         </div>
     </div>
+    
+    <script>
+        // 添加交互效果
+        document.addEventListener('DOMContentLoaded', function() {
+            // 当页面滚动时，可以添加更多交互效果
+            window.addEventListener('scroll', function() {
+                // 可以在这里添加滚动相关的交互
+            });
+            
+            // 初始化动画
+            const layers = document.querySelectorAll('.svg-bg');
+            layers.forEach(layer => {
+                layer.classList.add('animated-layer');
+            });
+        });
+    </script>
 </body>
 </html> 
