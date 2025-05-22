@@ -1,6 +1,20 @@
 [build]
   publish = "."
   command = "# no build command"
+  functions = "netlify/functions"
+
+[functions]
+  directory = "netlify/functions"
+
+[[redirects]]
+  from = "/.netlify/functions/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/proxy"
+  to = "/.netlify/functions/proxy"
+  status = 200
 
 [[headers]]
   for = "/*"
